@@ -96,8 +96,8 @@ dashboard-financeiro/
 
 <!-- Descomente e adicione suas imagens -->
 <!--
-### Tela Principal
-![Tela Principal](assets/tela-principal.png)
+ Tela Principal
+![Captura de tela 2026-01-28 222846.png)
 
 ### Gráficos
 ![Gráficos](assets/graficos.png)
