@@ -97,7 +97,7 @@ dashboard-financeiro/
 <!-- Descomente e adicione suas imagens -->
 <!--
  Tela Principal
-![Captura de tela 2026-01-28 222846.png)
+![[Captura de tela 2026-01-28 222846.png](https://github.com/fabimsoares16-bit/Dashboard-financeiro/blob/main/Captura%20de%20tela%202026-01-28%202231331.png))
 
 ### Gráficos
 ![Gráficos](assets/graficos.png)
