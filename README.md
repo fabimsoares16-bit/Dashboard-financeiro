@@ -96,7 +96,7 @@ dashboard-financeiro/
 
 
 ### Tela Principal
-![Tela Principal]()
+![Tela Principal](https://github.com/fabimsoares16-bit/Dashboard-financeiro/blob/main/Captura%20de%20tela%202026-01-28%20222846.png?raw=true)
 
 ### Gráficos
 ![Gráficos](assets/graficos.png)
