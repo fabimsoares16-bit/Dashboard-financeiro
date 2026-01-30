@@ -95,12 +95,12 @@ dashboard-financeiro/
 ## 📸 Screenshots
 
 
- Tela Principal
-![[https://github.com/fabimsoares16-bit/Dashboard-financeiro/blob/main/Captura%20de%20tela%202026-01-28%20222846.png]
+### Tela Principal
+![Tela Principal]()
 
 ### Gráficos
 ![Gráficos](assets/graficos.png)
--->
+
 
 *Em breve*
 
@@ -125,7 +125,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 👤 Autor
 
-Desenvolvido por **Fabio**
+Desenvolvido por **Francisco**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/seu-perfil)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/seu-usuario)
