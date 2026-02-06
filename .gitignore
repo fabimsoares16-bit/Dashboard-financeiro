@@ -205,3 +205,8 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# SQLite database (dados locais do usuário)
+financeiro.db
+financeiro.db-wal
+financeiro.db-shm
