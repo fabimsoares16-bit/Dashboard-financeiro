@@ -20,11 +20,18 @@ Aplicação web para controle financeiro pessoal que permite registrar receitas 
 ### Funcionalidades
 
 - **Registro de gastos** — cadastro de despesas fixas e variáveis por mês
+- **Categorias personalizadas** — Moradia, Alimentação, Transporte, Saúde, Educação, Lazer, Vestuário, Serviços, Investimentos e Outros
+- **Edição de gastos** — edite qualquer gasto cadastrado sem precisar remover e recriar
+- **Metas mensais** — defina metas de gastos por mês e acompanhe o progresso
 - **Resumo mensal** — visualização do saldo, total de gastos e percentual do salário comprometido
-- **Gráficos interativos** — distribuição por tipo (pizza) e evolução mensal (linha)
-- **Resumo anual** — visão consolidada de todos os meses
+- **Gráficos interativos** — distribuição por tipo (pizza), por categoria (pizza e barras) e evolução mensal (linha)
+- **Indicador de meta** — gráfico gauge mostrando progresso em relação à meta definida
+- **Resumo anual** — visão consolidada de todos os meses com status de meta
+- **Persistência em banco de dados** — dados salvos automaticamente em SQLite (não perde ao recarregar)
 - **Backup e restauração** — exportação e importação de dados via CSV
+- **Filtro por categoria** — filtre os gastos exibidos por categoria
 - **Alertas visuais** — indicadores de gastos controlados, altos ou excedentes
+- **Confirmação de ações** — diálogo de confirmação antes de apagar dados
 
 ---
 
@@ -38,8 +45,8 @@ Aplicação web para controle financeiro pessoal que permite registrar receitas 
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/dashboard-financeiro.git
-cd dashboard-financeiro
+git clone https://github.com/fabimsoares16-bit/Dashboard-financeiro.git
+cd Dashboard-financeiro
 ```
 
 2. Crie e ative o ambiente virtual:
@@ -74,20 +81,26 @@ streamlit run app.py
 | **Python** | Linguagem principal |
 | **Streamlit** | Interface web interativa |
 | **Pandas** | Manipulação de dados |
-| **Plotly Express** | Gráficos interativos |
-| **Matplotlib** | Visualizações auxiliares |
+| **Plotly** | Gráficos interativos |
+| **SQLite** | Persistência de dados |
 
 ---
 
 ## 📁 Estrutura do Projeto
 
 ```
-dashboard-financeiro/
-├── app.py              # Aplicação principal
-├── requirements.txt    # Dependências do projeto
-├── .gitignore          # Arquivos ignorados pelo Git
-├── LICENSE             # Licença MIT
-└── README.md           # Documentação
+Dashboard-financeiro/
+├── app.py                    # Aplicação principal
+├── src/
+│   ├── __init__.py
+│   ├── database.py           # Persistência com SQLite
+│   └── charts.py             # Gráficos com Plotly
+├── .streamlit/
+│   └── config.toml           # Configuração de tema
+├── requirements.txt          # Dependências do projeto
+├── .gitignore                # Arquivos ignorados pelo Git
+├── LICENSE                   # Licença MIT
+└── README.md                 # Documentação
 ```
 
 ---
@@ -104,19 +117,15 @@ dashboard-financeiro/
 ### Resumo
 ![Resumo](https://private-user-images.githubusercontent.com/228616224/542516947-f9c8c0d0-5aa2-4c9d-bdde-f080264fdf05.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Njk3MzYxOTEsIm5iZiI6MTc2OTczNTg5MSwicGF0aCI6Ii8yMjg2MTYyMjQvNTQyNTE2OTQ3LWY5YzhjMGQwLTVhYTItNGM5ZC1iZGRlLWYwODAyNjRmZGYwNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMTMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDEzMFQwMTE4MTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05NDUwNTBhY2U3YmQ4NTIzMzhkYzQ2NjQ1YjE3YWQ0MWQzMTQzZGQ1MWZlNTlkMDY0NWFlY2I0ZjAzZDViYjE4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Yq-2alOaDSk2bEBVp-sjEaQ0iMoX-Sa5tvRC9AMAs6g)
 
-
-
-
 ---
 
 ## 🔮 Melhorias Futuras
 
 - [ ] Autenticação de usuários
-- [ ] Persistência em banco de dados
-- [ ] Categorização personalizada de gastos
-- [ ] Metas de economia por mês
 - [ ] Relatórios em PDF
 - [ ] Deploy na nuvem (Streamlit Cloud)
+- [ ] Notificações quando se aproximar da meta
+- [ ] Suporte a múltiplas fontes de renda
 
 ---
 
